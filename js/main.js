@@ -1,13 +1,21 @@
-function myMenuFunction(){
-    var menuBth = document.getElementById("myNavMenu");
+// function myMenuFunction(){
+//     var menuBth = document.getElementById("myNavMenu");
 
-    if(menuBth.className === "nav-menu"){
-        menuBth.className += "responsive";
-    }
-    else{
-        menuBth.className = "nav-menu";
-    }
-}
+//     if(menuBth.className === "nav-menu"){
+//         menuBth.className += "responsive";
+//     }
+//     else{
+//         menuBth.className = "nav-menu";
+//     }
+// }
+// var typed = new typed(".text",{
+//     Strings:["Frontend Developer", "Coder", "Designer"],
+//     typeSpeed:100,
+//     backSpeed:100,
+//     backDelay:2000,
+//     loop:true,
+// });
+
     // dark mode
     const body = document.querySelector("body"),
     toggleSwitch = document.getElementById("toggle-switch");
@@ -16,28 +24,76 @@ function myMenuFunction(){
     body.classList.toggle("dark");
     });
 
-var typed = new typed(".text",{
-    Strings:["Frontend Developer", "Coder", "Designer"],
-    typeSpeed:100,
-    backSpeed:100,
-    backDelay:2000,
-    loop:true,
-});
+
 
 // Show More
-var row = document.querySelectorAll(".project-container.row");
-var btn = document.querySelector(".btn");
-var currentimg = 2
+var div = document.getElementById('main');
+var display = 0;
 
-btn.addEventListener("click", function(){
-    for(var i = currentimg; i< currentimg + 2; i++){
-        if(row[i]){
-            row[i].style.display = "block";
-        }
+function hide(){
+    if(display == 1){
+        div.style.display = "block";
+        display = 0;
     }
-    currentimg += 2;
+    else{
+        div.style.display = "none";
+        display = 1;
+    }
+}
+function show(){
+    if(display == 0){
+        div.style.display = "block";
+        display = 0;
+    }
+    else{
+        div.style.display = "block";
+        display = 1;
+    }
+}
+// const content = document.querySelector('.content');
+// const buttonShowMore = document.querySelector('.btncontainer .show-more');
+// const buttonHide = document.querySelector('.btncontainer .hide');
+// const button = document.querySelector('.btncontainer');
+// const arrowIcon = document.querySelector('.btncontainer .fas');
 
-    if(currentimg >= row.length){
-        event.target.style.display= "none";
-    }
-});
+// const initial = {
+//     showAllContent: true, //value is true => show content
+// };
+
+// button.addEventListener('click',()=>{
+//     // console.log('clicked');
+//     const defaultValue = {
+//         element: arrowIcon,
+//         currentIcon: 'fa-chevron-down',
+//         newIcon: 'fa-chevron-up',
+//     };
+
+//     //show content
+//     if(initial.showAllContent){
+//         showButton(buttonHide);
+//         showButton(buttonShowMore, false);
+
+//         content.classList.remove('gradient', 'maxHeight');
+//     }
+//     else{
+//         showButton(buttonHide, false);
+//         showButton(buttonShowMore);
+
+//         defaultValue.currentIcon = 'fa-chevron-up';
+//         defaultValue.newIcon = 'fa-chevron-down';
+//         content.classList.add('gradient', 'maxHeight');
+//     }
+
+//     changeIcon(defaultValue);
+//     initial.showAllContent = !initial.showAllContent;
+// });
+
+// function changeIcon(value){
+//     const{element, currentIcon, newIcon} = value;
+
+//     element.classList.add(newIcon);
+//     element.classList.remove(currentIcon);
+// }
+// function showButton(button, visible = true){
+//     !visible ? button.classList.add('d-none') : button.classList.remove('d-none');
+// }

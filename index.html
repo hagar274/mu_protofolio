@@ -99,7 +99,7 @@
         <!-- About box -->
         <section class="section" id="about">
             <div class="top-header">
-                <h1>About me</h1>
+                <h1>About <span>me</span></h1>
             </div>
             <div class="row">
                 <div class="col">
@@ -157,81 +157,33 @@
                     </div>
             </div>
         </section>
+
+        <br><br><br><br><br><br>
+
         <!-- Project Box -->
-        <section class="section" id="project">
-            <div class="top-header">
-                <h1><span>Latest</span>Projects</h1>
+        <div class="show-more-container">
+            <div class="title text-center p-5">
+                <h1 style="color: #5aa7ff;"><span style="color: #3a8ee2">Latest</span>Projects</h1>
             </div>
-            <div class="project-container">
-                <div class="row">
-                <a href="https://hagar274.github.io/Project-Two/"><img src="images/project 1.jpg" alt="p1"></a>
-                <div class="project-box">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <h3>Comleted</h3>
-                    <label>30+ Finshed Projects</label>
-                </div>
+            <a href="https://hagar274.github.io/Project-Two/"><img src="images/project 1.jpg" width="200px" height="200px" class="p1" alt="p1"></a>
+
+            <a href="https://hagar274.github.io/project-three/"><img src="images/project2.jpg" width="200px" height="200px" class="p2" alt="p2"></a>
+
+            <a href="https://hagar274.github.io/project-four/"><img src="images/project3.jpg" width="200px" height="200px" class="p" alt="p3"></a>
+
+            <a href="https://hagar274.github.io/Weather-App/"><img src="images/project4.jpg" width="200px" height="200px" alt="p4"></a>
+            <div id="main" class="main2">
+
+                <a href="https://hagar274.github.io/Login-Register/"><img src="images/project5.jpg" width="200px" height="200px" alt="p4"></a>
+                
+                <a href="https://hagar274.github.io/News-App/"><img src="images/project6.jpg" width="200px" height="200px" alt="p4"></a>
+
+                <a href="https://hagar274.github.io/birthday/"><img src="images/project7.jpg" width="200px" height="200px" alt="p4"></a>
+
+                <a href="https://hagar274.github.io/online_course/"><img src="images/project8.jpg" width="200px" height="200px" alt="p4"></a>
             </div>
-            <div class="row">
-                <a href="https://hagar274.github.io/project-three/"><img src="images/project2.jpg" alt="p2"></a>
-                <div class="project-box">
-                    <i class="fa-solid fa-user"></i>
-                    <h3>Client</h3>
-                    <label>50+ Happy Client</label>
-                </div>
-            </div>
-            <div class="row">
-                <a href="https://hagar274.github.io/project-four/"><img src="images/project3.jpg" alt="p3"></a>
-                <div class="project-box">
-                    <i class="fa-solid fa-award"></i>
-                    <h3>Experience</h3>
-                    <label>1+ Years in web development</label>
-                </div>
-            </div>
-            <div class="row">
-                <a href=""><img src="images/project4.jpg" alt="p4"></a>
-                <div class="project-box">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <h3>Comleted</h3>
-                    <label>30+ Finshed Projects</label>
-                </div>
-            </div>
-            <div class="row">
-                <a href=""><img src="images/project5.jpg" alt="p5"></a>
-                <div class="project-box">
-                    <i class="fa-solid fa-user"></i>
-                    <h3>Client</h3>
-                    <label>50+ Happy Client</label>
-                </div>
-            </div>
-            <div class="row">
-                <a href=""><img src="images/project6.jpg" alt="p6"></a>
-                <div class="project-box">
-                    <i class="fa-solid fa-award"></i>
-                    <h3>Experience</h3>
-                    <label>1+ Years in web development</label>
-                </div>
-            </div>
-            <div class="row">
-                <a href=""><img src="images/project7.jpg" alt="p7"></a>
-                <div class="project-box">
-                    <i class="fa-solid fa-award"></i>
-                    <h3>Experience</h3>
-                    <label>1+ Years in web development</label>
-                </div>
-            </div>
-            <div class="row">
-                <a href=""><img src="images/project8.jpg" alt="p8"></a>
-                <div class="project-box">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <h3>Comleted</h3>
-                    <label>30+ Finshed Projects</label>
-                </div>
-            </div>
-            <div class="btncontainer">
-            <button type="button" class="btn btn-info">Show More</button>
-            </div>
-            </div>
-        </section>
+            <button class="btn btn-info mt-5" style="margin-left: 350px;" onclick="hide()">Hide</button>
+            <button class="btn btn-info mt-5 d-none" style="margin-left: 350px;" onclick="show()">Show</button>
 
 
         <!-- Contact box -->
@@ -243,7 +195,7 @@
             <div class="row">
                 <div class="col">
                     <div class="contact-info">
-                        <h2>Find me <i class="fa-solid fa-arrow-turn-down"></i></h2>
+                        <h2>Find <span>me</span> <i class="fa-solid fa-arrow-turn-down"></i></h2>
                         <p><i class="fa-solid fa-envelope"></i> Email: hagartahoun@gmail.com</p>
                         <p><i class="fa-solid fa-phone"></i> Phone: 01275679688</p> 
                     </div>
