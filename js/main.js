@@ -30,23 +30,13 @@
 var div = document.getElementById('main');
 var display = 0;
 
-function hide(){
+function hideShow(){
     if(display == 1){
         div.style.display = "block";
         display = 0;
     }
     else{
         div.style.display = "none";
-        display = 1;
-    }
-}
-function show(){
-    if(display == 0){
-        div.style.display = "block";
-        display = 0;
-    }
-    else{
-        div.style.display = "block";
         display = 1;
     }
 }
